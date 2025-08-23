@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+
+#Common things can be mentioned here
+#If thing mentioned in active profile mentioned here-- will be over-rided with profile property
+
+# Logging config can be done in yml also. but no specified file can be created like logback.xml
+#logging:
+#  level:  #To set Logging level, so level and seveare than that level can perform
+#    com:  # traversing packages. give root here to apply to all, even spring's internal. can go to particular class
+#      learning: Error # this sets logging level to error; set All or Trace for more level

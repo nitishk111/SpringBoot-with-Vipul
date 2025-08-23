@@ -1,0 +1,41 @@
+<configuration>
+
+    <appender name="console-ap" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{yy-MM-dd HH::mm::SSS} [%thread] %-5level %logger{36} =%msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <!--    %n- -> new line
+            #msg -> messgae
+            %-5 -> left justified with 5 char [means text go left, space in right]
+            %36 -> logger upto 36 character only - have information like class name, exact class
+    -->
+
+
+    <appender name="file-ap" class="ch.qos.logback.core.rolling.RollingFileAppender"> <!-- ch.qos.logback.core.FileAppender , this makes only one file -->
+        <file>
+            JournalApp.log  <!-- created in project path. full path can be assigned to move it out -->
+        </file>
+
+        <encoder>
+            <pattern>
+                %d{HH::mm::SSS} [%thread] %-5level %logger{36} =%msg  %n
+            </pattern>
+        </encoder>
+
+        <!-- this is only for rolling File Appender, that create new log file on diff policies -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>JournalApp-%d{yy-MM-dd}.%i.log</fileNamePattern><!--JournalApp-%d{yy-MM-dd_HH-mm}.%i.log, for every minute updation -->
+            <maxFileSize>1MB</maxFileSize>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="console-ap"></appender-ref>
+        <appender-ref ref="file-ap" />
+    </root>
+</configuration>
