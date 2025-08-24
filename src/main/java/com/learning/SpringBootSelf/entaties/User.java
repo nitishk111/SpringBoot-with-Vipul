@@ -4,6 +4,7 @@ package com.learning.SpringBootSelf.entaties;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ import java.util.List;
 @Table(name = "user_details")
 @Data
 @Builder
+@AllArgsConstructor
 public class User {
 
     @Id
@@ -27,7 +29,13 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     @JsonIgnore
     private List<JournalEntry> entries;
+
+    private String role;
+
+    public User(){
+
+    }
 }

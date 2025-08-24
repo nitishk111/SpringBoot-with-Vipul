@@ -6,61 +6,91 @@ import com.learning.SpringBootSelf.repository.JournalEntryRepo;
 import com.learning.SpringBootSelf.repository.UserRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+@Service
 @Slf4j
 public class UserService {
 
-    @Autowired
-    UserRepo userRepo;
 
-    @Autowired
-    JournalEntryRepo journalRepo;
+        @Autowired
+        UserRepo userRepo;
 
+        @Autowired
+        JournalEntryRepo journalRepo;
 
+        PasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public boolean saveEntry(User user){
-        try{
-            userRepo.save(user);
-            return true;
-        } catch (Exception e) {
-            log.error("Error for {} :", user.getUserName(), e.getMessage());
-            log.warn("User already exists");
-            return false;
-        }
-
-    }
-
-    public List<User> getAll(){
-        return userRepo.findAll();
-    }
-
-    public User getById(long id){
-        return userRepo.findById(id).orElseGet(()->null);
-    }
-
-    public void deleteEntry(long id){
-        List<JournalEntry> journals= journalRepo.findByUserUserID(id);
-        if(journals !=null && journals.size()!=0){
-            for(JournalEntry j:journals){
-                journalRepo.deleteById(j.getJournalId());
+        public boolean saveEntry(User user){
+            try{
+                user.setPassword(encoder.encode(user.getPassword()));
+                userRepo.save(user);
+                return true;
+            } catch (Exception e) {
+                log.error("Error for {} :", user.getUserName(), e.getMessage());
+                log.warn("User already exists");
+                return false;
             }
-            userRepo.deleteById(id);
+
         }
 
-    }
+    public User updateEntry(String userName, User newUser){
 
-    public User updateEntry(long id, User newUser){
-
-        User oldUser= getById(id);
-        if(oldUser !=null) {
-            oldUser.setUserName(newUser.getUserName() != null && !newUser.getUserName().equals("") ? newUser.getUserName() : oldUser.getUserName());
-            oldUser.setPassword(newUser.getPassword() != null && !newUser.getPassword().equals(("")) ? newUser.getPassword() : oldUser.getPassword());
-            userRepo.save(oldUser);
+            User oldUser= userRepo.findByUserName(userName);
+            if(oldUser !=null) {
+                oldUser.setUserName(newUser.getUserName() != null && !newUser.getUserName().equals("") ? newUser.getUserName() : oldUser.getUserName());
+                oldUser.setPassword(newUser.getPassword() != null && !newUser.getPassword().equals(("")) ? newUser.getPassword() : oldUser.getPassword());
+                userRepo.save(oldUser);
+            }
+            return oldUser;
         }
-        return oldUser;
-    }
+
+        public void deleteEntry(String userName){
+
+            User user= userRepo.findByUserName(userName);
+            List<JournalEntry> journals= journalRepo.findByUserUserID(user.getUserID());
+
+            if(journals !=null && journals.size()!=0){
+                for(JournalEntry j:journals){
+                    journalRepo.deleteById(j.getJournalId());
+                }
+
+            }
+            userRepo.deleteById(user.getUserID());
+        }
+
+//        public List<User> getAll(){
+//            return userRepo.findAll();
+//        }
+//
+//        public User getById(long id){
+//            return userRepo.findById(id).orElseGet(()->null);
+//        }
+//
+//        public void deleteEntry(long id){
+//            List<JournalEntry> journals= journalRepo.findByUserUserID(id);
+//            if(journals !=null && journals.size()!=0){
+//                for(JournalEntry j:journals){
+//                    journalRepo.deleteById(j.getJournalId());
+//                }
+//                userRepo.deleteById(id);
+//            }
+//
+//        }
+//
+//        public User updateEntry(long id, User newUser){
+//
+//            User oldUser= getById(id);
+//            if(oldUser !=null) {
+//                oldUser.setUserName(newUser.getUserName() != null && !newUser.getUserName().equals("") ? newUser.getUserName() : oldUser.getUserName());
+//                oldUser.setPassword(newUser.getPassword() != null && !newUser.getPassword().equals(("")) ? newUser.getPassword() : oldUser.getPassword());
+//                userRepo.save(oldUser);
+//            }
+//            return oldUser;
+//        }
+
 }
