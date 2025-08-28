@@ -1,0 +1,187 @@
+02::33::107 [main] INFO  c.l.S.HandsonApplication =Starting HandsonApplication using Java 17.0.16 with PID 11048 (C:\SDK\Tutorial\SpringBootSelf\target\classes started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)
+02::33::112 [main] INFO  c.l.S.HandsonApplication =The following 1 profile is active: "dev"
+02::33::610 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02::33::775 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.
+02::33::915 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat initialized with port 8080 (http)
+02::33::943 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Initializing ProtocolHandler ["http-nio-8080"]
+02::33::946 [main] INFO  o.a.catalina.core.StandardService =Starting service [Tomcat]
+02::33::946 [main] INFO  o.a.catalina.core.StandardEngine =Starting Servlet engine: [Apache Tomcat/10.1.44]
+02::33::308 [main] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring embedded WebApplicationContext
+02::33::310 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext =Root WebApplicationContext: initialization completed in 3072 ms
+02::33::687 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]
+02::33::806 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final
+02::33::886 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled
+02::33::468 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer
+02::33::710 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...
+02::33::636 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@152e7703
+02::33::642 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.
+02::33::059 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02::33::554 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)
+02::33::929 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02::33::332 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'
+02::33::104 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02::33::910 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Starting ProtocolHandler ["http-nio-8080"]
+02::33::957 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat started on port 8080 (http) with context path '/test'
+02::33::977 [main] INFO  c.l.S.HandsonApplication =Started HandsonApplication in 10.806 seconds (process running for 12.246)
+02::37::376 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring DispatcherServlet 'dispatcherServlet'
+02::37::377 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet =Initializing Servlet 'dispatcherServlet'
+02::37::381 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet =Completed initialization in 4 ms
+02::38::572 [http-nio-8080-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper =SQL Error: 1062, SQLState: 23000
+02::38::573 [http-nio-8080-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper =Duplicate entry 'Jojo' for key 'user_details.UK7pqjkt6mwigem3tve6e8j2qlp'
+02::38::626 [http-nio-8080-exec-3] ERROR c.l.S.services.UserService =Error for Jojo :
+02::38::626 [http-nio-8080-exec-3] WARN  c.l.S.services.UserService =User already exists
+02::38::920 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Commencing graceful shutdown. Waiting for active requests to complete
+02::38::015 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Graceful shutdown complete
+02::38::019 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'
+02::38::023 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...
+02::38::069 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.
+02::44::371 [main] INFO  c.l.S.HandsonApplication =Starting HandsonApplication using Java 17.0.16 with PID 18352 (C:\SDK\Tutorial\SpringBootSelf\target\classes started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)  
+02::44::375 [main] INFO  c.l.S.HandsonApplication =The following 1 profile is active: "dev"  
+02::44::818 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+02::44::962 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 123 ms. Found 2 JPA repository interfaces.  
+02::44::092 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat initialized with port 8080 (http)  
+02::44::113 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Initializing ProtocolHandler ["http-nio-8080"]  
+02::44::117 [main] INFO  o.a.catalina.core.StandardService =Starting service [Tomcat]  
+02::44::117 [main] INFO  o.a.catalina.core.StandardEngine =Starting Servlet engine: [Apache Tomcat/10.1.44]  
+02::44::303 [main] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring embedded WebApplicationContext  
+02::44::305 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext =Root WebApplicationContext: initialization completed in 2815 ms  
+02::44::690 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]  
+02::44::804 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final  
+02::44::887 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled  
+02::44::583 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer  
+02::44::671 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...  
+02::45::311 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c2883b1  
+02::45::314 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.  
+02::45::584 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown  
+02::45::355 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)  
+02::45::696 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)  
+02::45::026 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'  
+02::45::845 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+02::45::540 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Starting ProtocolHandler ["http-nio-8080"]  
+02::45::587 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat started on port 8080 (http) with context path '/test'  
+02::45::608 [main] INFO  c.l.S.HandsonApplication =Started HandsonApplication in 10.089 seconds (process running for 11.251)  
+02::52::194 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Commencing graceful shutdown. Waiting for active requests to complete  
+02::52::347 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Graceful shutdown complete  
+02::52::353 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'  
+02::52::357 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...  
+02::52::506 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.  
+02::53::925 [main] INFO  c.l.S.HandsonApplication =Starting HandsonApplication using Java 17.0.16 with PID 22720 (C:\SDK\Tutorial\SpringBootSelf\target\classes started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)  
+02::53::930 [main] INFO  c.l.S.HandsonApplication =The following 1 profile is active: "dev"  
+02::53::365 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+02::53::530 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.  
+02::53::683 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat initialized with port 8080 (http)  
+02::53::710 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Initializing ProtocolHandler ["http-nio-8080"]  
+02::53::713 [main] INFO  o.a.catalina.core.StandardService =Starting service [Tomcat]  
+02::53::714 [main] INFO  o.a.catalina.core.StandardEngine =Starting Servlet engine: [Apache Tomcat/10.1.44]  
+02::53::838 [main] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring embedded WebApplicationContext  
+02::53::839 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext =Root WebApplicationContext: initialization completed in 2779 ms  
+02::53::189 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]  
+02::53::280 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final  
+02::53::355 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled  
+02::53::046 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer  
+02::53::126 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...  
+02::53::856 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cb195dd  
+02::53::860 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.  
+02::53::115 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown  
+02::53::548 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)  
+02::53::097 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)  
+02::53::385 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'  
+02::53::305 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+02::53::988 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Starting ProtocolHandler ["http-nio-8080"]  
+02::53::025 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat started on port 8080 (http) with context path '/test'  
+02::53::043 [main] INFO  c.l.S.HandsonApplication =Started HandsonApplication in 9.968 seconds (process running for 11.118)  
+02::54::572 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring DispatcherServlet 'dispatcherServlet'  
+02::54::572 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet =Initializing Servlet 'dispatcherServlet'  
+02::54::575 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet =Completed initialization in 3 ms  
+02::54::361 [http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper =SQL Error: 1062, SQLState: 23000  
+02::54::361 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper =Duplicate entry 'Jojo' for key 'user_details.UK7pqjkt6mwigem3tve6e8j2qlp'  
+02::54::403 [http-nio-8080-exec-2] ERROR c.l.S.services.UserService =Error for Jojo :  
+02::54::404 [http-nio-8080-exec-2] WARN  c.l.S.services.UserService =User already exists  
+02::55::925 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Commencing graceful shutdown. Waiting for active requests to complete  
+02::55::079 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Graceful shutdown complete  
+02::55::083 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'  
+02::55::087 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...  
+02::55::100 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.  
+03::27::543 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils =Could not detect default configuration classes for test class [com.learning.SpringBootSelf.HandsonApplicationTests]: HandsonApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.  
+03::27::154 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper =Found @SpringBootConfiguration com.learning.SpringBootSelf.HandsonApplication for test class com.learning.SpringBootSelf.HandsonApplicationTests  
+03::27::009 [main] INFO  c.l.S.HandsonApplicationTests =Starting HandsonApplicationTests using Java 17.0.16 with PID 25760 (started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)  
+03::27::011 [main] INFO  c.l.S.HandsonApplicationTests =The following 1 profile is active: "dev"  
+03::27::126 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+03::27::304 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 139 ms. Found 2 JPA repository interfaces.  
+03::27::368 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]  
+03::27::594 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final  
+03::27::745 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled  
+03::27::843 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer  
+03::27::923 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...  
+03::27::294 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36665c11  
+03::27::304 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.  
+03::27::309 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown  
+03::27::867 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)  
+03::27::282 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)  
+03::27::909 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'  
+03::27::354 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+03::27::444 [main] INFO  c.l.S.HandsonApplicationTests =Started HandsonApplicationTests in 16.46 seconds (process running for 21.021)  
+03::27::921 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils =Could not detect default configuration classes for test class [com.learning.SpringBootSelf.services.UserServicesTest]: UserServicesTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.  
+03::27::952 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper =Found @SpringBootConfiguration com.learning.SpringBootSelf.HandsonApplication for test class com.learning.SpringBootSelf.services.UserServicesTest  
+03::27::020 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'  
+03::27::041 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...  
+03::27::109 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.  
+03::29::340 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils =Could not detect default configuration classes for test class [com.learning.SpringBootSelf.HandsonApplicationTests]: HandsonApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.  
+03::29::776 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper =Found @SpringBootConfiguration com.learning.SpringBootSelf.HandsonApplication for test class com.learning.SpringBootSelf.HandsonApplicationTests  
+03::29::141 [main] INFO  c.l.S.HandsonApplicationTests =Starting HandsonApplicationTests using Java 17.0.16 with PID 15568 (started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)  
+03::29::143 [main] INFO  c.l.S.HandsonApplicationTests =The following 1 profile is active: "dev"  
+03::29::241 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+03::29::522 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 239 ms. Found 2 JPA repository interfaces.  
+03::29::764 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]  
+03::29::050 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final  
+03::29::438 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled  
+03::29::161 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer  
+03::29::327 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...  
+03::30::320 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e706aa  
+03::30::326 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.  
+03::30::863 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown  
+03::30::243 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)  
+03::30::935 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)  
+03::30::412 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'  
+03::30::857 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+03::30::141 [main] INFO  c.l.S.HandsonApplicationTests =Started HandsonApplicationTests in 26.77 seconds (process running for 29.91)  
+03::30::924 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils =Could not detect default configuration classes for test class [com.learning.SpringBootSelf.services.UserServicesTest]: UserServicesTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.  
+03::30::953 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper =Found @SpringBootConfiguration com.learning.SpringBootSelf.HandsonApplication for test class com.learning.SpringBootSelf.services.UserServicesTest  
+03::30::075 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'  
+03::30::093 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...  
+03::30::144 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.  

@@ -53,9 +53,9 @@ public class JwtUtil {
 
     private Claims extractAllClaims(String token) {
         return Jwts.parser()
-                .verifyWith(getSigningKey())
+                .verifyWith(getSigningKey()) //giving information abt which key to use to verify
                 .build()
-                .parseSignedClaims(token)
+                .parseSignedClaims(token) //actual verification happens here
                 .getPayload();
     }
 

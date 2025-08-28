@@ -1,0 +1,120 @@
+01::08::130 [main] INFO  c.l.S.HandsonApplication =Starting HandsonApplication using Java 17.0.16 with PID 1420 (C:\SDK\Tutorial\SpringBootSelf\target\classes started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)  
+01::08::145 [main] INFO  c.l.S.HandsonApplication =The following 1 profile is active: "dev"  
+01::08::683 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+01::08::844 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 141 ms. Found 2 JPA repository interfaces.  
+01::08::052 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat initialized with port 8080 (http)  
+01::08::070 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Initializing ProtocolHandler ["http-nio-8080"]  
+01::08::073 [main] INFO  o.a.catalina.core.StandardService =Starting service [Tomcat]  
+01::08::073 [main] INFO  o.a.catalina.core.StandardEngine =Starting Servlet engine: [Apache Tomcat/10.1.44]  
+01::08::182 [main] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring embedded WebApplicationContext  
+01::08::183 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext =Root WebApplicationContext: initialization completed in 3736 ms  
+01::08::634 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]  
+01::08::769 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final  
+01::08::841 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled  
+01::08::610 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer  
+01::08::669 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...  
+01::08::971 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cd7f381  
+01::08::973 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.  
+01::09::165 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown  
+01::09::978 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)  
+01::09::390 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)  
+01::09::031 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'  
+01::09::059 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor =Autowired annotation should only be used on methods with parameters: public org.springframework.security.crypto.password.PasswordEncoder com.learning.SpringBootSelf.controllers.config.SecurityConfig.passwordEncoder()  
+01::09::168 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+01::09::204 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer =Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR  
+01::09::518 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Starting ProtocolHandler ["http-nio-8080"]  
+01::09::615 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat started on port 8080 (http) with context path '/test'  
+01::09::633 [main] INFO  c.l.S.HandsonApplication =Started HandsonApplication in 15.664 seconds (process running for 19.339)  
+01::11::213 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Commencing graceful shutdown. Waiting for active requests to complete  
+01::11::312 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Graceful shutdown complete  
+01::11::317 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'  
+01::11::320 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...  
+01::11::372 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.  
+01::18::824 [main] INFO  c.l.S.HandsonApplication =Starting HandsonApplication using Java 17.0.16 with PID 1948 (C:\SDK\Tutorial\SpringBootSelf\target\classes started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)  
+01::18::829 [main] INFO  c.l.S.HandsonApplication =The following 1 profile is active: "dev"  
+01::18::240 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+01::18::388 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 119 ms. Found 2 JPA repository interfaces.  
+01::18::468 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat initialized with port 8080 (http)  
+01::18::483 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Initializing ProtocolHandler ["http-nio-8080"]  
+01::18::486 [main] INFO  o.a.catalina.core.StandardService =Starting service [Tomcat]  
+01::18::486 [main] INFO  o.a.catalina.core.StandardEngine =Starting Servlet engine: [Apache Tomcat/10.1.44]  
+01::18::596 [main] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring embedded WebApplicationContext  
+01::18::597 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext =Root WebApplicationContext: initialization completed in 2634 ms  
+01::18::987 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]  
+01::18::097 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final  
+01::18::169 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled  
+01::18::845 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer  
+01::18::906 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...  
+01::18::469 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bcb1414  
+01::18::471 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.  
+01::18::746 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown  
+01::18::275 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)  
+01::18::581 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)  
+01::18::716 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'  
+01::18::740 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor =Autowired annotation should only be used on methods with parameters: public org.springframework.security.crypto.password.PasswordEncoder com.learning.SpringBootSelf.controllers.config.SecurityConfig.passwordEncoder()  
+01::18::653 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+01::18::691 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer =Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR  
+01::18::585 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Starting ProtocolHandler ["http-nio-8080"]  
+01::18::623 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat started on port 8080 (http) with context path '/test'  
+01::18::644 [main] INFO  c.l.S.HandsonApplication =Started HandsonApplication in 13.803 seconds (process running for 14.976)  
+01::24::287 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring DispatcherServlet 'dispatcherServlet'  
+01::24::289 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet =Initializing Servlet 'dispatcherServlet'  
+01::24::297 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet =Completed initialization in 6 ms  
+01::35::423 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Commencing graceful shutdown. Waiting for active requests to complete  
+01::35::488 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Graceful shutdown complete  
+01::35::502 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'  
+01::35::528 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...  
+01::35::626 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.  
+01::47::819 [main] INFO  c.l.S.HandsonApplication =Starting HandsonApplication using Java 17.0.16 with PID 11856 (C:\SDK\Tutorial\SpringBootSelf\target\classes started by Chinta Ram in C:\SDK\Tutorial\SpringBootSelf)  
+01::47::828 [main] INFO  c.l.S.HandsonApplication =The following 1 profile is active: "dev"  
+01::47::785 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+01::47::958 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate =Finished Spring Data repository scanning in 139 ms. Found 2 JPA repository interfaces.  
+01::47::685 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat initialized with port 8080 (http)  
+01::47::702 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Initializing ProtocolHandler ["http-nio-8080"]  
+01::47::719 [main] INFO  o.a.catalina.core.StandardService =Starting service [Tomcat]  
+01::47::719 [main] INFO  o.a.catalina.core.StandardEngine =Starting Servlet engine: [Apache Tomcat/10.1.44]  
+01::47::034 [main] INFO  o.a.c.c.C.[.[localhost].[/test] =Initializing Spring embedded WebApplicationContext  
+01::47::034 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext =Root WebApplicationContext: initialization completed in 4099 ms  
+01::47::541 [main] INFO  o.h.jpa.internal.util.LogHelper =HHH000204: Processing PersistenceUnitInfo [name: default]  
+01::47::810 [main] INFO  org.hibernate.Version =HHH000412: Hibernate ORM core version 6.6.26.Final  
+01::47::973 [main] INFO  o.h.c.i.RegionFactoryInitiator =HHH000026: Second-level cache disabled  
+01::47::245 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo =No LoadTimeWeaver setup: ignoring JPA class transformer  
+01::47::352 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Starting...  
+01::47::783 [main] INFO  com.zaxxer.hikari.pool.HikariPool =HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40ac0a56  
+01::47::799 [main] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Start completed.  
+01::47::477 [main] INFO  o.hibernate.orm.connections.pooling =HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown  
+01::47::236 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard =HHH000182: No default (no-argument) constructor for class: com.learning.SpringBootSelf.entaties.User (class must be instantiated by Interceptor)  
+01::47::725 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator =HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)  
+01::47::894 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Initialized JPA EntityManagerFactory for persistence unit 'default'  
+01::47::908 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor =Autowired annotation should only be used on methods with parameters: public org.springframework.security.crypto.password.PasswordEncoder com.learning.SpringBootSelf.config.SecurityConfig.passwordEncoder()  
+01::47::797 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration =spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+01::47::834 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer =Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR  
+01::47::768 [main] INFO  o.a.coyote.http11.Http11NioProtocol =Starting ProtocolHandler ["http-nio-8080"]  
+01::47::903 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer =Tomcat started on port 8080 (http) with context path '/test'  
+01::47::924 [main] INFO  c.l.S.HandsonApplication =Started HandsonApplication in 14.946 seconds (process running for 17.406)  
+01::57::120 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Commencing graceful shutdown. Waiting for active requests to complete  
+01::57::241 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown =Graceful shutdown complete  
+01::57::247 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean =Closing JPA EntityManagerFactory for persistence unit 'default'  
+01::57::250 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown initiated...  
+01::57::385 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource =HikariPool-1 - Shutdown completed.  
